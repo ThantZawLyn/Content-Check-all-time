@@ -30,7 +30,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: all-time-app/
+          context: all-time-app/Dockerfile
+          #context: all-time-app/
           push: true
           tags: mglue/all-time-app:v2
 
