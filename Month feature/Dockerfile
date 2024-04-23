@@ -5,8 +5,8 @@ FROM mglue/content-similarity-base:v1
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY ./data_3000/ /app/data_3000
-COPY ./data_today/ /app/data_today
+#COPY ./data_3000/ /app/data_3000
+#COPY ./data_today/ /app/data_today
 
 # Install Python dependencies
 #RUN pip install --no-cache-dir -r requirements.txt
@@ -16,4 +16,4 @@ COPY ./data_today/ /app/data_today
 COPY ./app/ /app
 
 # Define the command to run your Python application
-CMD ["python", "all-time.py"]
+CMD ["python", "month.py"]
