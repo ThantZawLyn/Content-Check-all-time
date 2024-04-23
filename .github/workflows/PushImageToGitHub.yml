@@ -20,4 +20,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mglue/Content-Check-all-time-app:v1
+          tags: mglue/content-check-all-time-app:v1
